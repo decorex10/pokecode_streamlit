@@ -4,7 +4,6 @@ import streamlit_authenticator as stauth
 import streamlit as st
 import pandas as pd
 
-
 names = ["Misty", "Dawn"]
 usernames = ["Misty", "Dawn"]
 
@@ -15,7 +14,7 @@ with file_path.open("rb") as file:
 
 # cookie json para autenticar sem necessitar inserir dados a cada atualização de pag
 authenticator = stauth.Authenticate(names, usernames, hashed_passwords,
-    "sales_dashboard", "abcdef", cookie_expiry_days=30)
+    "pokecode", "balls", cookie_expiry_days=30)
 
 # tela de login produzida pela biblioteca da streamlit
 name, authentication_status, username = authenticator.login("Login", "main")
