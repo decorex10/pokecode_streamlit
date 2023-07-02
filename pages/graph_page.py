@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+with open('assets\css\style.css') as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 pokemon_df = pd.read_csv("data\pokemon.csv")
 # CODIGO QUE RETIRA OS DUPICADAS DE NÚMERO DA POKEDEX
 pokemon_df = pokemon_df.drop_duplicates(subset='pokedex_number')

@@ -1,0 +1,12 @@
+.site-title {
+    color: #0A0A0A;
+}
+.site-subt {
+    color: #1A1A1A;
+}
+div[data-baseweb="select"] > div {
+    background-color: white;
+}
+[data-testid=stSidebar] {
+    background-color: #c6c6c6;
+}
