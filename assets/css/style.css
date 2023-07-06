@@ -8,5 +8,8 @@ div[data-baseweb="select"] > div {
     background-color: white;
 }
 [data-testid=stSidebar] {
-    background-color: #c6c6c6;
+    background-color: #AACAFB;
+} 
+[data-testid=stExpander] {
+    background-color: #AACAFB;
 }
